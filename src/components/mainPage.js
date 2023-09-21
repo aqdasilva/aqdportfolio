@@ -18,6 +18,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import avatar from '../images/avatar.png';
+
 
 const drawerWidth = 240;
 
@@ -69,6 +71,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function MainPage() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const avatar = require('../images/avatar.png');
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -145,7 +148,7 @@ export default function MainPage() {
       <Main open={open}>
         <DrawerHeader />
         <Typography paragraph>
-          Welcome
+          Welcome <img src={avatar} alt='avatar' width="200" />
         </Typography>
         <Typography paragraph>
           This is where my avatar will go XD
