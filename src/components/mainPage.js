@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import StickyFooter from './footer';
 // import avatar from '../images/avatar.png';
 
 
@@ -82,6 +83,7 @@ export default function MainPage() {
   };
 
   return (
+    <div>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
@@ -155,5 +157,7 @@ export default function MainPage() {
         </Typography>
       </Main>
     </Box>
+    <StickyFooter />
+    </div>
   );
 }
